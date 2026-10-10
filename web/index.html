@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NIB 1.0 — Découvertes culturelles</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <header>
+    <span class="badge">NIB 1.0 · IA symbolique et culture</span>
+    <!-- EXERCICE WEB JOUR 1 : reformuler le titre h1 avec tes propres mots. -->
+    <h1>Une découverte, un conseil, une explication</h1>
+    <!-- EXERCICE WEB JOUR 3 : ajouter ici un paragraphe p décrivant une limite. -->
+    <p>Dans un centre culturel fictif à Douala, NIB suggère des activités selon les préférences du visiteur et montre les règles utilisées.</p>
+  </header>
+  <div class="layout">
+    <section>
+      <h2>Préférences du visiteur</h2>
+      <!-- Python génère les cinq champs : ne pas renommer les emplacements. -->
+      <form method="post" action="/">
+        $champs
+        <button type="submit">Découvrir les suggestions</button>
+        <a href="/">Réinitialiser</a>
+      </form>
+      <p class="error" role="alert">$erreur</p>
+    </section>
+    <section aria-live="polite">$resultat</section>
+  </div>
+  <details><summary>Base de connaissances : six règles</summary><ul>$regles</ul></details>
+  <footer>Prototype local · Préférences déclarées · Activités fictives à confirmer auprès du centre.</footer>
+</main>
+</body>
+</html>

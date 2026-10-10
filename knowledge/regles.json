@@ -1,0 +1,8 @@
+[
+  {"id":"R1","si":["aime_recits=oui"],"alors":"interet_narratif","explication":"Le visiteur a exprimé un intérêt pour les récits : le modèle établit un intérêt narratif."},
+  {"id":"R2","si":["interet_narratif"],"alors":"conseil_atelier_recits","explication":"Proposer la séance de récits du centre : un animateur présente des histoires et leur contexte."},
+  {"id":"R3","si":["aime_musique=oui"],"alors":"conseil_ecoute_musicale","explication":"Proposer la séance d'écoute commentée, avec présentation des œuvres et de leurs sources."},
+  {"id":"R4","si":["aime_creer=oui"],"alors":"conseil_atelier_creation","explication":"Proposer l'atelier de création : produire une carte illustrée inspirée de la visite, sans revendiquer une reproduction traditionnelle authentique."},
+  {"id":"R5","si":["temps_court=oui"],"alors":"conseil_format_court","explication":"Choisir une activité au format court ; demander au centre les horaires et durées réellement disponibles."},
+  {"id":"R6","si":["prefere_audio=oui"],"alors":"conseil_support_audio","explication":"Proposer le support audio si le centre le possède ; cette préférence ne permet pas de déduire un handicap."}
+]

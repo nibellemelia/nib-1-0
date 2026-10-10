@@ -1,0 +1,25 @@
+/* EXERCICE WEB JOUR 2 : changer --accent, en gardant le texte blanc lisible. */
+:root { --accent: #8a3d24; --fond: #fbf5ed; --texte: #33251c; }
+body { margin: 0; background: var(--fond); color: var(--texte); font: 16px system-ui; }
+main { max-width: 1080px; margin: auto; padding: 32px; }
+header p { max-width: 800px; line-height: 1.6; }
+.badge { color: var(--accent); font-weight: 700; }
+.layout { display: grid; grid-template-columns: 340px 1fr; gap: 24px; }
+section { background: white; border: 1px solid #e9dacb; border-radius: 16px; padding: 24px; }
+label { display: block; margin-bottom: 18px; }
+select { display: block; width: 100%; padding: 10px; margin-top: 7px; border: 1px solid #ad9886; border-radius: 7px; }
+button { padding: 12px 18px; border: 0; border-radius: 8px; background: var(--accent); color: white; font-weight: 700; cursor: pointer; }
+a { color: var(--accent); }
+li { margin: 10px 0; line-height: 1.5; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.mode { font-size: 13px; color: #64574d; }
+.graph { overflow: auto; }
+svg { min-width: 700px; width: 100%; }
+.noeud { fill: var(--accent); }
+.liaison { stroke: var(--accent); stroke-width: 2; }
+.conclusion { fill: #f6e7d6; }
+.error { color: #a02323; }
+details { margin: 22px 0; }
+footer { margin: 24px 0; line-height: 1.5; }
+/* Une media query adapte la disposition aux écrans étroits. */
+@media (max-width: 800px) { .layout { grid-template-columns: 1fr; } main { padding: 16px; } }
